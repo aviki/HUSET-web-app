@@ -8,14 +8,15 @@ function checkData() {
 }
 //Fetchinn the theater events from WordPress//
 function getData() {
+  console.log(getData);
 
     fetch("http://liatalony.com/liatalony/wp-json/wp/v2/event?_embed&per_page=100&categories=15")
         .then(res => res.json())
-        .then(handleData)
+        .then(handleData);
 }
 
 function handleData(myData) {
-    //    console.log(myData);
+     console.log(myData);
     //1 loop
     myData.forEach(showTheater)
 
@@ -24,9 +25,9 @@ function handleData(myData) {
 }
 
 function showTheater(theater) {
-    //    console.log(theater)
+      console.log(theater);
 
-    const imgPath = theater._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
+    const imgPath = theater._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
     //
     //
     const template = document.querySelector("template").content;
@@ -49,7 +50,7 @@ function showTheater(theater) {
     const img = theaterCopy.querySelector(".img");
     img.style.backgroundImage = `url(${imgPath})`;
 
-    //Creating the modal for single theater events// 
+    //Creating the modal for single theater events//
     article.addEventListener("click", function () {
         console.log(theater);
         const modal = document.querySelector(".modalbg");

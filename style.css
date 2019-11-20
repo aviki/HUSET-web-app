@@ -1,15 +1,18 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-html {
-  font-family: "Helvetica Neue", sans-serif;
+@font-face{
+  font-family: AvenirNextLTPro-Regular;
+  src: url(Avenir-Next-Font/AvenirNextLTPro-Regular.otf)
 }
 
 * {
   box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: AvenirNextLTPro-Regular, sans-serif;
+  color: #000000;
 }
 
 #index-page {
@@ -88,22 +91,6 @@ label {
   display: none;
 }
 
-.img {
-    height: 0;
-    width: 100%;
-    padding-top: 40%;
-    margin-top: 0.7em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.modalimg {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-}
-
 
 @media only screen and (max-width: 500px)  {
   label {
@@ -129,6 +116,49 @@ label {
   .row {
 padding-right: calc(100vw - 75vw)
   }
+}
+
+/*THEATER EVENTS on front page and in the modal*/
+#theater {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+article {
+    background-color: #ffffff;
+    border: 1px solid black;
+    max-width: 100%;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em 1em 1em;
+}
+
+article h2 {
+    margin: 0;
+    padding-left: 1em;
+}
+
+.details {
+    padding-right: 1em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img {
+    height: 0;
+    width: 100%;
+    padding-top: 40%;
+    background-position: center;
+    background-size: cover;
+}
+
+.modalimg {
+  display: block;
+  margin: auto;
+  max-width: 100%;
 }
 
 /*CONTACT PAGE*/

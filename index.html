@@ -9,7 +9,7 @@
     <meta name="robots" content="noindex, nofollow">
 </head>
 <body id="index-page">
-    <img class="logo" src="images/logo.png" alt="Huset Logo">
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="Huset Logo"></a>
     <div class="nav">
       <label for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle"/>
@@ -33,7 +33,45 @@
       </div>
     </div>
 
+<section id="theater"></section>
+    <template>
+        <article>
+            <div class="container">
+                <div class="img"></div>
+                <div class="content">
+                    <h2 class="headlinefront">Event Name</h2>
+                    <h3 class="timefront">Time</h3>
+                    <h4 class="datefront">Date</h4>
+                    <h5 class="locationfront">Loation</h5>
+                    <h6 class="pricefront">Price</h6>
+                </div>
+            </div>
+        </article>
+    </template>
 
 
-  </body>
-  </html>
+    <div class="modalbg">
+        <p class="exit">&times;</p>
+        <div class="modal">
+
+            <article>
+                <div class="modalcontainer">
+                    <div class="modalimg"></div>
+                    <div class="modalcontent">
+                        <h2 class="modalheadlinefront">Event Name</h2>
+                        <h3 class="modaltimefront">Time</h3>
+                        <h4 class="modaldatefront">Date</h4>
+                        <h5 class="modallocationfront">Loation</h5>
+                        <h6 class="modalpricefront">Price</h6>
+
+                    </div>
+                </div>
+            </article>
+            <a href="https://www.onlineticketsshop.com/dk/byer/kobenhavn-arrangementer?gclid=Cj0KCQiAtrnuBRDXARIsABiN-7BZzFXLM18Pfl77X62-Bkq3pjM8IPlJIjmrrDwmjykkAo86j2gnV-0aAkoIEALw_wcB" class="buyticket">Buy Ticket</a>
+            <p class="modaldescription"></p>
+        </div>
+    </div>
+    <script defer src="script.js"></script>
+
+    </body>
+    </html>

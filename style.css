@@ -88,6 +88,23 @@ label {
   display: none;
 }
 
+.img {
+    height: 0;
+    width: 100%;
+    padding-top: 40%;
+    margin-top: 0.7em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modalimg {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+
 @media only screen and (max-width: 500px)  {
   label {
     display: block;

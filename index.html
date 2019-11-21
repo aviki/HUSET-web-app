@@ -10,28 +10,30 @@
 </head>
 <body id="index-page">
     <a href="index.html"><img class="logo" src="images/logo.png" alt="Huset Logo"></a>
-    <div class="nav">
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle"/>
-      <div class="menu">
-        <a href="index.html">Events</a>
-        <a href="theater.html">Theater Huset</a>
-        <a href="general.html">General</a>
-        <a href="contact.html">Contact</a>
 
-          <div class="row">
-              <div class="column">
-                <a href="https://www.facebook.com/Huset.Koebenhavn"><img id="SoMe-f" alt="SoMe" src="images/facebook.png"></a>
-              </div>
-              <div class="column">
-                <a href="https://www.instagram.com/husetkbh/"><img id="SoMe-i" alt="SoMe" src="images/instagram.png"></a>
-              </div>
-              <div class="column">
-                <a href="https://twitter.com/HusetKBH"><img id="SoMe-t" alt="SoMe" src="images/twitter.png"></a>
-              </div>
+        <div class="nav">
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <div class="menu" id="myMenu">
+            <span class="close">&times;</span>
+            <a href="index.html">Events</a>
+            <a href="theater.html">Theater Huset</a>
+            <a href="general.html">General</a>
+            <a href="contact.html">Contact</a>
+
+              <div class="row">
+                  <div class="column">
+                    <a href="https://www.facebook.com/Huset.Koebenhavn"><img id="SoMe-f" alt="SoMe" src="images/facebook.png"></a>
+                  </div>
+                  <div class="column">
+                    <a href="https://www.instagram.com/husetkbh/"><img id="SoMe-i" alt="SoMe" src="images/instagram.png"></a>
+                  </div>
+                  <div class="column">
+                    <a href="https://twitter.com/HusetKBH"><img id="SoMe-t" alt="SoMe" src="images/twitter.png"></a>
+                  </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
 <div id="theater"></div>
     <template>
@@ -63,7 +65,7 @@
                         <h2 class="modalheadlinefront">Event Name</h2>
                         <h3 class="modaltimefront">Time</h3>
                         <h4 class="modaldatefront">Date</h4>
-                        <h5 class="modallocationfront">Loation</h5>
+                        <h5 class="modallocationfront">Location</h5>
                         <h6 class="modalpricefront">Price</h6>
                         <a href="https://www.onlineticketsshop.com/dk/byer/kobenhavn-arrangementer?gclid=Cj0KCQiAtrnuBRDXARIsABiN-7BZzFXLM18Pfl77X62-Bkq3pjM8IPlJIjmrrDwmjykkAo86j2gnV-0aAkoIEALw_wcB"class="buttons" id="ticket-button">Buy Ticket</a>
                         <p class="modaldescription"></p>

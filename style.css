@@ -30,6 +30,7 @@ html, body {
   height: 70px;
   line-height: 70px;
   color: #ffffff;
+  background-color: #B40422;
 }
 
 .menu {
@@ -272,4 +273,9 @@ article h2 {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* SUB PAGES (Contact, Theater, General) STYLING */
+.sub-page {
+  background-color: #ffffff;
 }

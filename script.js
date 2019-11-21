@@ -81,13 +81,3 @@ function showTheater(theater) {
     document.querySelector("#theater").appendChild(theaterCopy)
 
 }
-
-//const menu = document.querySelector(".menu");
-//const nav = document.querySelector("nav");
-//const navexit = document.querySelector(".navexit");
-//menu.addEventListener("click", function () {
-    //nav.style.width = "50%";
-//});
-//navexit.addEventListener("click", function () {
-  //  nav.style.width = "0%";
-//});

@@ -96,7 +96,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
 checkbox.onclick = function() {
   menuModal.style.display = "block";
-  menuModal.style.zIndex = "100";
+  //menuModal.style.zIndex = "1";
 }
 
 // When the user clicks on <span> (x), close the modal

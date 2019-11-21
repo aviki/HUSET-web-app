@@ -32,7 +32,7 @@ function showTheater(theater) {
     //
     const template = document.querySelector("template").content;
     const theaterCopy = template.cloneNode(true);
-    //    //3. textcontent & innerHTML
+
     const article = theaterCopy.querySelector("article");
 
     const headlinefront = theaterCopy.querySelector(".headlinefront");

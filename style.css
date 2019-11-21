@@ -171,7 +171,6 @@ article h2 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: Catamaran;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
@@ -180,13 +179,65 @@ article h2 {
   border-radius: 12px;
 }
 
-#email-button {
+#feedback-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
 }
 
-#email-button a {
+#feedback-button a {
+  text-decoration: none;
+}
+
+/*MODAL STYLING*/
+
+.modalbg {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+          /* Exit from MODAL */
+.exit {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+.exit:hover,
+.exit:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+      /* Ticket button in MODAL*/
+
+#ticket-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+#ticket-button a {
   text-decoration: none;
 }

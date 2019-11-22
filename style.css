@@ -180,16 +180,7 @@ article h2 {
   border-radius: 12px;
 }
 
-#feedback-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-}
 
-#feedback-button a {
-  text-decoration: none;
-}
 
 /*MODAL STYLING*/
 
@@ -288,4 +279,8 @@ article h2 {
     margin: 1em 2em 1em 2em;
     text-align: justify;
     line-height: 1.5em;
+}
+
+.pictures {
+  margin: auto;
 }
